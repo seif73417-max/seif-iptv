@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#07152d">
+<title>Seif IPTV</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 15% 0%,#1b478d 0,transparent 35%),#071225;color:#f8fbff;font-family:Tahoma,Arial,sans-serif;line-height:1.7}
+.wrap{width:min(920px,92%);margin:auto}.top{padding:20px 0;border-bottom:1px solid #6aa8ff44;font-size:24px;font-weight:bold}.top span{color:#38d9ff}
+.hero{text-align:center;padding:55px 0 35px}.tag{color:#9deaff;border:1px solid #38d9ff66;border-radius:30px;padding:6px 14px;font-size:12px}
+h1{font-size:clamp(40px,8vw,66px);margin:18px 0 8px}.muted{color:#b5c5df}
+.btn{display:inline-block;border:0;border-radius:12px;padding:13px 22px;background:linear-gradient(120deg,#397bff,#18bde8);color:white;font-weight:bold;text-decoration:none;cursor:pointer}
+.section{padding:25px 0}.heading{text-align:center;margin-bottom:22px}.cards,.two{display:grid;grid-template-columns:repeat(3,1fr);gap:15px}.two{grid-template-columns:1fr 1fr}
+.card,.panel{background:linear-gradient(150deg,#172d50,#0d1a31);border:1px solid #345782;border-radius:18px;padding:20px}.featured{border-color:#38d9ff;box-shadow:0 0 22px #38d9ff33}
+.price{font-size:32px;font-weight:bold;margin:10px 0}.card .btn{width:100%}
+form{display:grid;gap:12px}label{font-size:14px}input,select,textarea{width:100%;padding:13px;border-radius:10px;border:1px solid #345782;background:#08152b;color:white;font:inherit}textarea{min-height:70px}
+a{color:#aeefff}footer{text-align:center;border-top:1px solid #6aa8ff44;padding:22px;color:#b5c5df;font-size:12px}
+@media(max-width:650px){.cards,.two{grid-template-columns:1fr}.hero{padding-top:40px}}
+</style>
+</head>
+<body>
+<header class="wrap top">SEIF <span>IPTV</span></header>
+<main>
+<section class="wrap hero"><span class="tag">PREMIUM IPTV EXPERIENCE</span><h1>SEIF IPTV</h1><p class="muted">اختار باقتك وابعث طلب الاشتراك بسهولة.</p><a class="btn" href="#plans">استعرض الباقات</a></section>
+<section class="wrap section" id="plans"><div class="heading"><h2>باقات NOVA IPTV</h2><p class="muted">أسعار داخل مصر وخارج مصر — اختار مدة الاشتراك المناسبة ليك</p></div>
+<div class="cards">
+<article class="card"><h3>3 شهور</h3><div class="price">250 <small>جنيه</small></div><button class="btn" onclick="choosePlan('داخل مصر — 3 شهور|250')">داخل مصر</button><p><strong>350 جنيه</strong></p><button class="btn" onclick="choosePlan('خارج مصر — 3 شهور|350')">خارج مصر</button></article>
+<article class="card featured"><h3>6 شهور</h3><div class="price">350 <small>جنيه</small></div><button class="btn" onclick="choosePlan('داخل مصر — 6 شهور|350')">داخل مصر</button><p><strong>450 جنيه</strong></p><button class="btn" onclick="choosePlan('خارج مصر — 6 شهور|450')">خارج مصر</button></article>
+<article class="card"><h3>سنة</h3><div class="price">500 <small>جنيه</small></div><button class="btn" onclick="choosePlan('داخل مصر — سنة|500')">داخل مصر</button><p><strong>600 جنيه</strong></p><button class="btn" onclick="choosePlan('خارج مصر — سنة|600')">خارج مصر</button></article>
+<article class="card"><h3>سنتين</h3><div class="price">1000 <small>جنيه</small></div><button class="btn" onclick="choosePlan('داخل مصر — سنتين|1000')">داخل مصر</button><p><strong>1100 جنيه</strong></p><button class="btn" onclick="choosePlan('خارج مصر — سنتين|1100')">خارج مصر</button></article>
+</div></section>
+<section class="wrap section"><div class="heading"><h2>طرق الدفع</h2></div><div class="two">
+<div class="panel"><h3>InstaPay</h3><p><a href="https://ipn.eg/S/seifosama1907/instapay/7U0PXs" target="_blank" rel="noopener">افتح رابط InstaPay للتحويل</a></p><h3>محفظة كاش</h3><p dir="ltr">01119439180</p></div>
+<div class="panel"><h3>خطوات الطلب</h3><p>1. اختار الباقة.</p><p>2. اكتب بياناتك.</p><p>3. اختار طريقة الدفع.</p><p>4. ابعت الطلب عبر واتساب.</p></div>
+</div></section>
+<section class="wrap section" id="order"><div class="heading"><h2>اطلب اشتراكك</h2><p class="muted">املأ البيانات وسيتم فتح واتساب برسالة جاهزة</p></div>
+<div class="panel"><form id="orderForm">
+<div><label for="customer">الاسم</label><input id="customer" required placeholder="اكتب اسمك"></div>
+<div><label for="phone">رقم التواصل</label><input id="phone" required inputmode="tel" placeholder="رقم الموبايل"></div>
+<div><label for="plan">الباقة</label><select id="plan"><optgroup label="داخل مصر"><option value="داخل مصر — 3 شهور|250">3 شهور — 250 جنيه</option><option value="داخل مصر — 6 شهور|350">6 شهور — 350 جنيه</option><option value="داخل مصر — سنة|500">سنة — 500 جنيه</option><option value="داخل مصر — سنتين|1000">سنتين — 1000 جنيه</option></optgroup><optgroup label="خارج مصر"><option value="خارج مصر — 3 شهور|350">3 شهور — 350 جنيه</option><option value="خارج مصر — 6 شهور|450">6 شهور — 450 جنيه</option><option value="خارج مصر — سنة|600">سنة — 600 جنيه</option><option value="خارج مصر — سنتين|1100">سنتين — 1100 جنيه</option></optgroup></select></div>
+<div><label for="method">طريقة الدفع</label><select id="method"><option>InstaPay</option><option>محفظة كاش</option></select></div>
+<div><label for="notes">ملاحظات (اختياري)</label><textarea id="notes" placeholder="أي تفاصيل إضافية"></textarea></div>
+<button class="btn" type="submit">إرسال الطلب عبر واتساب</button></form>
+<p class="muted">الطلب يفتح واتساب برسالة جاهزة. الدفع لا يتم تلقائيًا من الموقع.</p></div></section>
+</main><footer>© 2026 Seif IPTV — جميع الحقوق محفوظة</footer>
+<script>
+const ADMIN_WHATSAPP="201042067762";
+function choosePlan(v){document.getElementById("plan").value=v;document.getElementById("order").scrollIntoView({behavior:"smooth"});}
+document.getElementById("orderForm").addEventListener("submit",function(e){e.preventDefault();const name=document.getElementById("customer").value.trim(),phone=document.getElementById("phone").value.trim(),[duration,price]=document.getElementById("plan").value.split("|"),method=document.getElementById("method").value,notes=document.getElementById("notes").value.trim();const msg="طلب اشتراك جديد - Seif IPTV\nالاسم: "+name+"\nرقم التواصل: "+phone+"\nالسيرفر: NOVA IPTV\nالمدة: "+duration+"\nالسعر: "+price+" جنيه مصري\nطريقة الدفع: "+method+"\nملاحظات: "+(notes||"لا يوجد");window.open("https://wa.me/"+ADMIN_WHATSAPP+"?text="+encodeURIComponent(msg),"_blank");});
+</script>
+</body></html>
